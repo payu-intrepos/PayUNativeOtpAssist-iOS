@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-PayUNativeOtpAssistSwiftSample/Pods-PayUNativeOtpAssistSwiftSample-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUAnalytics/PayUAnalytics.framework/PayUAnalytics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCrashReporter/PayUCrashReporter.framework/PayUCrashReporter
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCustomBrowser/PayUCustomBrowser.framework/PayUCustomBrowser
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNativeOtpAssist/PayUNativeOtpAssist.framework/PayUNativeOtpAssist
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNetworkReachability/PayUNetworkReachability.framework/PayUNetworkReachability
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUBizCoreKit/PayUBizCoreKit.framework/PayUBizCoreKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit/PayUParamsKit.framework/PayUParamsKit

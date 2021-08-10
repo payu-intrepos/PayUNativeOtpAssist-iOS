@@ -1,0 +1,42 @@
+PODS:
+  - PayUIndia-Analytics (1.0):
+    - PayUIndia-NetworkReachability (~> 1.0)
+  - PayUIndia-CrashReporter (1.0.0)
+  - PayUIndia-Custom-Browser (7.0.0)
+  - PayUIndia-NativeOtpAssist (1.0.0):
+    - PayUIndia-Analytics (~> 1.0)
+    - PayUIndia-CrashReporter (~> 1.0)
+    - PayUIndia-NetworkReachability (~> 1.0)
+    - PayUIndia-PayUParams (~> 2.0)
+  - PayUIndia-NetworkReachability (1.0)
+  - PayUIndia-PayUParams (2.0.0)
+  - PayUIndia-PG-SDK (6.2.1):
+    - PayUIndia-PayUParams (~> 2.0)
+
+DEPENDENCIES:
+  - PayUIndia-Custom-Browser
+  - PayUIndia-NativeOtpAssist
+  - PayUIndia-PG-SDK
+
+SPEC REPOS:
+  trunk:
+    - PayUIndia-Analytics
+    - PayUIndia-CrashReporter
+    - PayUIndia-Custom-Browser
+    - PayUIndia-NativeOtpAssist
+    - PayUIndia-NetworkReachability
+    - PayUIndia-PayUParams
+    - PayUIndia-PG-SDK
+
+SPEC CHECKSUMS:
+  PayUIndia-Analytics: 9bfbdb9767a247e344821592aeae3490f20500e8
+  PayUIndia-CrashReporter: e4e6a68b2a2f59fb826331db0799f0167f596593
+  PayUIndia-Custom-Browser: ffa6e718d4617d59680cef8364222ecb77e9e1fb
+  PayUIndia-NativeOtpAssist: 11fc33940a43658677df4bb88a178531111ff531
+  PayUIndia-NetworkReachability: d30457a8162f586d67d77f42f2ccbbadd0e9a685
+  PayUIndia-PayUParams: 9ef9cbc3c362773d9d054aee3cd4cd008aefed38
+  PayUIndia-PG-SDK: 9ec290643eceffac9a80e8bf4560e16985549c8c
+
+PODFILE CHECKSUM: f27ebb3d0e3b329987246df481b406602110e9a4
+
+COCOAPODS: 1.10.2
