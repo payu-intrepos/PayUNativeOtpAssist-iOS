@@ -8,17 +8,8 @@
 import UIKit
 class MerchantViewController: BaseViewController {
     // MARK: - Variables -
-    let keySalt = [["3TnMpV", "g0nGFe03"],
-                   ["V2yqBC", "dEzD8BBD"],
-                   ["0MQaQP", "7tVMWdl6"],
-                   ["smsplus", "1b1b0"],
-                   ["ol4Spy", "J0ZXw2z9"],
-                   ["obScKz", "Ml7XBCdR"],
-                   ["gtKFFx", "eCwWELxi"],
-                   ["Rl8Pdr", "wsl9kqyy"],
-                   ["smsplus", "350"],
-                   ["IUIaFM", "67njRYSI"],
-                   ["F53fW7", "PPIzLXEo"]]
+    let keySalt = [["3TnMpV", "<Please_add_test_salt_here>"],
+                   ["gtKFFx", "<Please_add_test_salt_here>"]]
     
     let indexKeySalt = 4
     var amount: String = "1"
