@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
 import CoreTelephony
 import Foundation
@@ -12,14 +12,28 @@ import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
-@objc public protocol PayUOtpAssistAPIProtocol : AnyObject {
-  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (PayUNativeOtpAssist.VerifyPayment?, Swift.Error?) -> ())
-  @objc func initiatePayment(postData: Swift.String, completion: @escaping (PayUNativeOtpAssist.VerifyPayment?, Swift.Error?) -> ())
-  @objc func submitOTP(otp: Swift.String, completion: @escaping (PayUNativeOtpAssist.VerifyPayment?, Swift.Error?) -> ())
-  @objc func resendOTP(completion: @escaping (PayUNativeOtpAssist.VerifyPayment?, Swift.Error?) -> ())
-  @objc func cancelTransaction(completion: @escaping (PayUNativeOtpAssist.VerifyPayment?, Swift.Error?) -> ())
+extension PPKError {
+  public var formattedErrorCode: Swift.String {
+    get
+  }
+  public var formattedErrorDescription: Swift.String {
+    get
+  }
+  public var isKindOfPaymentFailure: Swift.Bool {
+    get
+  }
+  public var isKnownError: Swift.Bool {
+    get
+  }
 }
-@objc public protocol PayUOtpAssistDelegate : AnyObject {
+@objc public protocol PayUOtpAssistAPIProtocol {
+  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+  @objc func initiatePayment(postData: Swift.String, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+  @objc func submitOTP(otp: Swift.String, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+  @objc func resendOTP(completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+  @objc func cancelTransaction(completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+}
+@objc public protocol PayUOtpAssistDelegate {
   @objc func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc func onPaymentFailure(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
@@ -31,8 +45,8 @@ import WebKit
   @objc public var merchantLogo: UIKit.UIImage?
   @objc public var shouldShowMerchantSummary: Swift.Bool
   @objc public var merchantResponseTimeout: Swift.Int64
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension UIDevice {
   public static let modelName: Swift.String
@@ -42,50 +56,8 @@ extension UIDevice {
   @objc public static func open(parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
   @objc public static func open(parentVC: UIKit.UIViewController, postData: Swift.String, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
   public static func start()
-  @objc deinit
   @objc override dynamic public init()
-}
-@objc @_inheritsConvenienceInitializers public class VerifyPayment : ObjectiveC.NSObject, Swift.Codable {
   @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class BinData : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class MetaData : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class ResendOtp : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class SubmitOtp : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class Result : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class PostToBank : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
-  public func encode(to encoder: Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PayUAcsRequest : ObjectiveC.NSObject {
   @objc public var issuerPostData: Swift.String?
