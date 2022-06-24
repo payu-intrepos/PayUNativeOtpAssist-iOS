@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-NativeOtpAssist"
-podVersion="2.1.1"
+podVersion="2.1.2"
 
 podSpec="${podName}.podspec"
 tag="${podVersion}"
