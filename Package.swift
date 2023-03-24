@@ -3,22 +3,30 @@
 
 import PackageDescription
 
+let VERSION_PARAM_KIT: PackageDescription.Version = "4.5.0"
+let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
+let VERSION_CRASH_REPORTER: PackageDescription.Version = "2.1.0"
+let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.0.1"
+
 let package = Package(
+
     name: "PayUIndia-NativeOtpAssist",
     platforms: [.iOS(.v11)],
+
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PayUIndia-NativeOtpAssist",
-            targets: ["PayUIndia-NativeOtpAssistTarget"]),
+            targets: ["PayUIndia-NativeOtpAssistTarget"]
+        )
     ],
+
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS", from: "4.5.0"),
-        .package(name: "PayUIndia-NetworkReachability",url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS", from: "2.0.1"),
-        .package(name: "PayUIndia-Analytics",url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: "3.0.0"),
-        .package(name: "PayUIndia-CrashReporter",url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS", from: "2.1.0")   
+        .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS", from: VERSION_PARAM_KIT),
+        .package(name: "PayUIndia-NetworkReachability", url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS", from: VERSION_NETWORK_REACHABILITY),
+        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT),
+        .package(name: "PayUIndia-CrashReporter", url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS", from: VERSION_CRASH_REPORTER)
     ],
+
     targets: [
         .binaryTarget(name: "PayUNativeOtpAssist", path: "./framework/PayUNativeOtpAssist.xcframework"),
         .target(
@@ -31,6 +39,7 @@ let package = Package(
                 "PayUNativeOtpAssist"
             ],
             path: "PayUIndia-NativeOtpAssistWrapper"
-        ),
+        )
     ]
+
 )

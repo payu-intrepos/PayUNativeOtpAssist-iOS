@@ -1,6 +1,16 @@
+# Supress warning messages.
+original_verbose, $VERBOSE = $VERBOSE, nil
+
+# Read file
+vars_from_file = File.read("../Dependency/PayUParamsKit/GitHub/Version.txt")
+eval(vars_from_file)
+
+# Activate warning messages again.
+$VERBOSE = original_verbose
+
 Pod::Spec.new do |s|
 s.name                = "PayUIndia-NativeOtpAssist"
-s.version             = "2.1.3"
+s.version             = NATIVE_OTP_ASSIST_POD_VERSION
 s.license             = "MIT"
 s.homepage            = "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS"
 s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -14,11 +24,8 @@ s.source              = { :git => "https://github.com/payu-intrepos/PayUNativeOt
 s.documentation_url   = "https://payumobile.gitbook.io/sdk-integration/ios/native-otp-assist"
 s.platform            = :ios , "11.0"
 s.vendored_frameworks = 'framework/PayUNativeOtpAssist.xcframework'
-s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
-s.dependency            'PayUIndia-PayUParams', '~> 4.5'
-s.dependency            'PayUIndia-Analytics', '~> 3.0'
-s.dependency            'PayUIndia-CrashReporter', '~> 2.1'
-
-
+NATIVE_OTP_ASSIST_PODSPEC_DEPENDENCIES.each do |dependency|
+    dependency
+end
 
 end
