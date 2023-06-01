@@ -24,7 +24,8 @@ let package = Package(
         .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS", from: VERSION_PARAM_KIT),
         .package(name: "PayUIndia-NetworkReachability", url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS", from: VERSION_NETWORK_REACHABILITY),
         .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS", from: VERSION_ANALYTICS_KIT),
-        .package(name: "PayUIndia-CrashReporter", url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS", from: VERSION_CRASH_REPORTER)
+        .package(name: "PayUIndia-CrashReporter", url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS", from: VERSION_CRASH_REPORTER),
+        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", from: VERSION_COMMON_UI)
     ],
 
     targets: [
@@ -36,7 +37,8 @@ let package = Package(
                 "PayUIndia-Analytics",
                 "PayUIndia-NetworkReachability",
                 "PayUIndia-CrashReporter",
-                "PayUNativeOtpAssist"
+                "PayUNativeOtpAssist",
+                "PayUIndia-CommonUI"
             ],
             path: "PayUIndia-NativeOtpAssistWrapper"
         )
