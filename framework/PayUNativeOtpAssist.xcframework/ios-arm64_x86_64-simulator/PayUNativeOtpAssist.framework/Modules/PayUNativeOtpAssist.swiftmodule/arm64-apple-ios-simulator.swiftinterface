@@ -52,6 +52,7 @@ extension PayUParamsKit.PayUError {
   @objc public var merchantResponseTimeout: Swift.Int64
   @objc public var merchantLanguage: PayUParamsKit.PayULanguageCode
   @objc final public let showUserCancellationDialogue: Swift.Bool
+  @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
   @objc override dynamic public init()
   @objc deinit
 }

@@ -298,6 +298,7 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist24PayUOtpAssistAPIProtocol_")
 
 @class UIColor;
 @class UIImage;
+@class PayUFontFamily;
 
 SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @interface PayUOtpAssistConfig : NSObject
@@ -308,6 +309,7 @@ SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @property (nonatomic) int64_t merchantResponseTimeout;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -641,6 +643,7 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist24PayUOtpAssistAPIProtocol_")
 
 @class UIColor;
 @class UIImage;
+@class PayUFontFamily;
 
 SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @interface PayUOtpAssistConfig : NSObject
@@ -651,6 +654,7 @@ SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @property (nonatomic) int64_t merchantResponseTimeout;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
