@@ -1080,6 +1080,7 @@
             "protocolReq": true,
             "objc_name": "generateHashFor:onCompletion:",
             "declAttributes": [
+              "Optional",
               "ObjC",
               "RawDocComment"
             ],

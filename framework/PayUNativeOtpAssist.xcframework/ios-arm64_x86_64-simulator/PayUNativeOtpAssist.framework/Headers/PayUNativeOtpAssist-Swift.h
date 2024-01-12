@@ -333,7 +333,6 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist21PayUOtpAssistDelegate_")
 /// :returns: Bool,  When you want to handle fallback scenarios then return ‘false’ otherwise return ‘true’.
 /// The default value is ‘true’
 - (BOOL)shouldHandleFallbackWithPayUAcsRequest:(PayUAcsRequest * _Nonnull)payUAcsRequest SWIFT_WARN_UNUSED_RESULT;
-@required
 /// It’s an optional callback method, to collect hash.
 /// You just need to change the return value to false.
 /// :param: [String: String], It contains hashName and hashString,
@@ -707,7 +706,6 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist21PayUOtpAssistDelegate_")
 /// :returns: Bool,  When you want to handle fallback scenarios then return ‘false’ otherwise return ‘true’.
 /// The default value is ‘true’
 - (BOOL)shouldHandleFallbackWithPayUAcsRequest:(PayUAcsRequest * _Nonnull)payUAcsRequest SWIFT_WARN_UNUSED_RESULT;
-@required
 /// It’s an optional callback method, to collect hash.
 /// You just need to change the return value to false.
 /// :param: [String: String], It contains hashName and hashString,

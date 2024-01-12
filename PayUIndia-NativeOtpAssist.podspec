@@ -11,7 +11,7 @@ s.description         = "The OTP Assist SDK provides a complete authentication f
 s.source              = { :git => "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
 :tag => "#{s.version}"
 }
-s.documentation_url   = "https://payumobile.gitbook.io/sdk-integration/ios/native-otp-assist"
+s.documentation_url   = "https://docs.payu.in/docs/ios-native-otp-assist-sdk"
 s.platform            = :ios , "11.0"
 s.vendored_frameworks = 'framework/PayUNativeOtpAssist.xcframework'
 s.dependency            'PayUIndia-PayUParams', '~>5.2'

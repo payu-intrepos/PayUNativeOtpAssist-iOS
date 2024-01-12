@@ -46,7 +46,7 @@ extension PayUParamsKit.PayUError {
   @objc func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
   @objc optional func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
-  @objc func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping (_ hashDict: [Swift.String : Swift.String]) -> Swift.Void)
+  @objc optional func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping (_ hashDict: [Swift.String : Swift.String]) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssistConfig : ObjectiveC.NSObject {
   @objc public var themeColor: UIKit.UIColor
