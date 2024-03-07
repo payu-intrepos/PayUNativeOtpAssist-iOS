@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "5.2.0"
+let VERSION_PARAM_KIT: PackageDescription.Version = "5.3.0"
 let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
 let VERSION_CRASH_REPORTER: PackageDescription.Version = "3.0.0"
 let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.0.1"
@@ -12,7 +12,7 @@ let VERSION_COMMON_UI: PackageDescription.Version = "1.2.0"
 let package = Package(
 
     name: "PayUIndia-NativeOtpAssist",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v12)],
 
     products: [
         .library(
