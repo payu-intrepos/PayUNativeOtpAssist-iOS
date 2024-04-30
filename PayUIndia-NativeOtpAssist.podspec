@@ -17,7 +17,7 @@ s.vendored_frameworks = 'framework/PayUNativeOtpAssist.xcframework'
 s.dependency            'PayUIndia-PayUParams', '~>5.4'
 s.dependency            'PayUIndia-Analytics', '~>3.0'
 s.dependency            'PayUIndia-CrashReporter', '~>3.0'
-s.dependency            'PayUIndia-NetworkReachability', '~>2.0'
+s.dependency            'PayUIndia-NetworkReachability', '~>1.0'
 s.dependency            'PayUIndia-CommonUI', '~>1.2'
 end
 
