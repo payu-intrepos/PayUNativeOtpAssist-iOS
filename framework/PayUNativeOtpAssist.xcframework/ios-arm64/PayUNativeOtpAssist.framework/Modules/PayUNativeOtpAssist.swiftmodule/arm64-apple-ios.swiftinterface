@@ -1,11 +1,11 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreTelephony
 import DeveloperToolsSupport
 import Foundation
-import PayUAnalytics
+import PayUAnalyticsKit
 import PayUCommonUI
 import PayUCrashReporter
 @_exported import PayUNativeOtpAssist
@@ -21,17 +21,17 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension PayUParamsKit.PayUError {
-  public var formattedErrorCode: Swift.String {
-    get
+  @objc dynamic public var formattedErrorCode: Swift.String {
+    @objc get
   }
-  public var formattedErrorDescription: Swift.String {
-    get
+  @objc dynamic public var formattedErrorDescription: Swift.String {
+    @objc get
   }
-  public var isKindOfPaymentFailure: Swift.Bool {
-    get
+  @objc dynamic public var isKindOfPaymentFailure: Swift.Bool {
+    @objc get
   }
-  public var isKnownError: Swift.Bool {
-    get
+  @objc dynamic public var isKnownError: Swift.Bool {
+    @objc get
   }
 }
 @objc public protocol PayUOtpAssistAPIProtocol {
