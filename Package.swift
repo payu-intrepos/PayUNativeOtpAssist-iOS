@@ -4,10 +4,10 @@
 import PackageDescription
 
 let VERSION_PARAM_KIT: PackageDescription.Version = "6.0.0"
-let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.0"
+let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.1"
 let VERSION_CRASH_REPORTER: PackageDescription.Version = "4.0.0"
 let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.1.0"
-let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "2.0.1"
 
 let package = Package(
 
