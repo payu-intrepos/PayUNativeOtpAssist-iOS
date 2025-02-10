@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @property (nonatomic) BOOL shouldShowSecureWebView;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
+@property (nonatomic) BOOL isProtectedScreen;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

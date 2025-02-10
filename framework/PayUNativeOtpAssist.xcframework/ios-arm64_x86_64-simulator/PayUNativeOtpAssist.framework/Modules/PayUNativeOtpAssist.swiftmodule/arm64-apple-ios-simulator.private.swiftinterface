@@ -61,6 +61,7 @@ extension PayUParamsKit.PayUError {
   @objc public var shouldShowSecureWebView: Swift.Bool
   @objc final public let showUserCancellationDialogue: Swift.Bool
   @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
+  @objc public var isProtectedScreen: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
