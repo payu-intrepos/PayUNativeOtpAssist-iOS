@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name                = "PayUIndia-NativeOtpAssist"
-s.version             = "4.1.0"
+s.version             = "4.2.0"
 s.license             = "MIT"
 s.homepage            = "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS"
 s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -14,10 +14,10 @@ s.source              = { :git => "https://github.com/payu-intrepos/PayUNativeOt
 s.documentation_url   = "https://docs.payu.in/docs/ios-native-otp-assist-sdk"
 s.platform            = :ios , "13.0"
 s.vendored_frameworks = 'framework/PayUNativeOtpAssist.xcframework'
-s.dependency            'PayUIndia-PayUParams', '~>6.3'
+s.dependency            'PayUIndia-PayUParams', '~>6.6'
 s.dependency            'PayUIndia-Analytics', '~>4.0'
 s.dependency            'PayUIndia-CrashReporter', '~>4.0'
 s.dependency            'PayUIndia-NetworkReachability', '~>2.1'
-s.dependency            'PayUIndia-CommonUI', '~>2.1'
+s.dependency            'PayUIndia-CommonUI', '~>2.2'
 end
 
