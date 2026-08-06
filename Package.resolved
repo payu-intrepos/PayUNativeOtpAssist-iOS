@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS",
         "state": {
           "branch": null,
-          "revision": "3822bb10e29c9da5a4f4ffb4d71bed863fadc02c",
-          "version": "7.0.1"
+          "revision": "77d8f12702e54a4ce1c51ac5c29e90549d42d257",
+          "version": "7.3.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS",
         "state": {
           "branch": null,
-          "revision": "5531c51a199d25780459f3285b198dfc13f3f990",
-          "version": "4.0.2"
+          "revision": "2964afc21d089d05f4abef205cb3ed4c825d91dd",
+          "version": "4.1.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
           "branch": null,
-          "revision": "9de838fd3b73fc266fa3f6852126e5a0cc82e83e",
-          "version": "2.3.2"
+          "revision": "a53f36e6828d9a2b7228a140c5310cd3bb63cb58",
+          "version": "2.4.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
         "state": {
           "branch": null,
-          "revision": "454760775aaa4a9cf9d9a3ec8aec2fdf276ad664",
-          "version": "4.0.1"
+          "revision": "bd8e6c99af9221077d71aea531446e14bdb6a1fa",
+          "version": "4.0.3"
         }
       },
       {
