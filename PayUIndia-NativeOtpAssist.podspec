@@ -14,7 +14,7 @@ s.source              = { :git => "https://github.com/payu-intrepos/PayUNativeOt
 s.documentation_url   = "https://docs.payu.in/docs/ios-native-otp-assist-sdk"
 s.platform            = :ios , "13.0"
 s.vendored_frameworks = 'framework/PayUNativeOtpAssist.xcframework'
-s.dependency            'PayUIndia-PayUParams', '~>7.3'
+s.dependency            'PayUIndia-PayUParams', '~>7.4'
 s.dependency            'PayUIndia-Analytics', '~>4.1'
 s.dependency            'PayUIndia-CrashReporter', '~>4.0'
 s.dependency            'PayUIndia-NetworkReachability', '~>2.1'
